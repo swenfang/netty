@@ -24,7 +24,9 @@ import java.util.NoSuchElementException;
 
 /**
  * A hash map implementation of {@link IntObjectMap} that uses open addressing for keys.
+ * 它对于 key 使用的是 open addressing 策略，也就是开放寻址策略。
  * To minimize the memory footprint, this class uses open addressing rather than chaining.
+ * 为了最小化内存占用，使用开放寻址策略而不是链表
  * Collisions are resolved using linear probing. Deletions implement compaction, so cost of
  * remove can approach O(N) for full maps, which makes a small loadFactor recommended.
  *
